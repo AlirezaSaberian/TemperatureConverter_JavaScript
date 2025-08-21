@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temperature Converter App" />
+    <title>Temperature Converter</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="theme-switch">
+        <input type="checkbox" id="themeToggleCheckbox" />
+        <label for="themeToggleCheckbox"></label>
+      </div>
+
+      <header>Temperature Converter</header>
+      <input type="number" id="converter" placeholder="Enter value..." />
+
+      <div class="selectors">
+        <select id="fromUnit">
+          <option value="°C">Celsius (°C)</option>
+          <option value="°F">Fahrenheit (°F)</option>
+          <option value="K">Kelvin (K)</option>
+          <option value="°R">Rankine (°R)</option>
+        </select>
+
+        <span>→</span>
+
+        <select id="toUnit">
+          <option value="°F">Fahrenheit (°F)</option>
+          <option value="°C">Celsius (°C)</option>
+          <option value="K">Kelvin (K)</option>
+          <option value="°R">Rankine (°R)</option>
+        </select>
+      </div>
+
+      <p class="result"></p>
+
+      <div id="buttons">
+        <button class="convertButton">Convert</button>
+        <button class="resetButton">Reset</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
